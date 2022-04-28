@@ -1,0 +1,65 @@
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.element {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50rem;
+  filter: contrast(300%) brightness(150%);
+  background: radial-gradient(
+      circle at 30% 90%,
+      rgba(28, 44, 154, 1),
+      rgba(0, 0, 0, 0)
+    ),
+    url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 243 243'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1'%3E%3C/feTurbulence%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'%3E%3C/rect%3E%3C/svg%3E");
+} */
+
+/* otro////////////////////////////////////////////////////////////////////// */
+/* body {
+  background-color: hsla(0, 100%, 50%, 1);
+  background-image: radial-gradient(
+      at 40% 20%,
+      hsla(28, 100%, 74%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%),
+    url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 243 243'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='6.9'%3E%3C/feTurbulence%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'%3E%3C/rect%3E%3C/svg%3E");
+    height: 100%;
+} */
+/* otro////////////////////////////////////////////////////////////////////// */
+
+body::before,
+body::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  mix-blend-mode: multiply;
+}
+body::before{
+  background: #000;
+  filter: url(#noiseFilter);
+}
+body::after{
+  background-color:hsla(51,100%,49%,1);
+  background-image:
+  radial-gradient(at 91% 16%, hsla(50,61%,30%,1) 0px, transparent 50%),
+  radial-gradient(at 40% 20%, hsla(38,61%,27%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 50%, hsla(28,59%,27%,1) 0px, transparent 50%),
+  radial-gradient(at 86% 87%, hsla(28,60%,33%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 100%, hsla(28,45%,20%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 100%, hsla(50,45%,15%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 3%, hsla(28,19%,24%,1) 0px, transparent 50%);
+}
