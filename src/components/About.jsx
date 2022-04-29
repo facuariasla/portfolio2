@@ -3,7 +3,7 @@ import { Stack, Text } from "@chakra-ui/react";
 
 export const About = () => {
   return (
-    <Stack direction='row' padding={6}>
+    <Stack direction='row' padding={6} id='about'>
       <Stack>
         <Text>Algunas descripciones sobre mi etc etc etc</Text>
         <Text>Algunas descripciones sobre mi etc etc etc</Text>

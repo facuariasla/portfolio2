@@ -79,7 +79,7 @@ const technologies = [
 
 export const Knowledge = () => {
   return (
-    <Stack paddingY={8} borderBottom="1px white solid">
+    <Stack paddingY={8} borderBottom="1px white solid" >
       <Text textAlign="center" pb={3} fontSize={40}>
         Technologies
       </Text>

@@ -1,11 +1,17 @@
 import { SimpleGrid, Stack, Text, Image, Link } from "@chakra-ui/react";
 import React from "react";
+import img1 from '../assets/proyect-screens/RPS-pvp2.png';
+import img2 from '../assets/proyect-screens/RPS-single2.png';
+import img3 from '../assets/proyect-screens/Crypto-info2.png';
+import img4 from '../assets/proyect-screens/YuGiOh2.png';
+import img5 from '../assets/proyect-screens/LandingPage2.png';
+import img6 from '../assets/proyect-screens/FirstPortf2.png';
 
 const projects = [
   {
     id: 1,
     title: "Rock, Paper & Scissors - PVP",
-    img: "",
+    img: img1,
     desc: "",
     link: "https://des6-2.herokuapp.com",
     repo: "https://github.com/facuariasla/des6-2",
@@ -54,7 +60,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <Stack padding={5}>
+    <Stack padding={5} id='portfolio'>
       <Text textAlign="center" pb={3} fontSize={40}>
        Some Projects
       </Text>
@@ -62,8 +68,8 @@ export const Projects = () => {
       <SimpleGrid columns={[2, 2, 3, 3]} gap={4}>
         {projects.map((el) => (
           <Stack key={el.id} border='1px solid tomato' textAlign='center'>
-            <Link href={el.link} isExternal>
-              <Image src="" h={100} w='100%'></Image>
+            <Link href={el.link} isExternal h={150}>
+              <Image src=''></Image>
             </Link>
             <Text>{el.title}</Text>
             <Text>{el.desc}</Text>

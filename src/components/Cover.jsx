@@ -44,6 +44,7 @@ export const Cover = () => {
       width="100%"
       alignItems="center"
       justifyContent="center"
+      id='home'
     >
       <Stack
         width={["100%", null, null, "50%"]}

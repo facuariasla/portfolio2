@@ -13,7 +13,7 @@ import {
 
 export const Contact = () => {
   return (
-    <Stack padding={6}>
+    <Stack padding={6} id='contact'>
       <Text textAlign="center" pb={3} fontSize={40}>
         Contact me
       </Text>
