@@ -50,7 +50,7 @@ export const Contact = () => {
     alertSent();
   };
 
-  const messageSend = async() => {
+  const messageSend = async () => {
     return fetch("https://apx-api.vercel.app/api/utils/dwf", {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -129,6 +129,9 @@ export const Contact = () => {
           Send
         </Button>
       </FormControl>
+      <Text textAlign="center" color="gray.500">
+        Or send me an email to <strong>facundolautaroarias@hotmail.com</strong>
+      </Text>
     </Stack>
   );
 };

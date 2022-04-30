@@ -83,7 +83,7 @@ export const Knowledge = () => {
   const colorTech = useColorModeValue('black', 'white');
 
   return (
-    <Stack paddingY={24} >
+    <Stack paddingTop={24} >
       <Text textAlign="center" pb={3} fontSize={40}>
         Technologies
       </Text>

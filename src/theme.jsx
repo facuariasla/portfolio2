@@ -5,7 +5,7 @@ import { mode } from "@chakra-ui/theme-tools";
 export const theme1 = extendTheme({
   config: {
     initialColorMode: "light",
-    useSystemColorMode: true,
+    useSystemColorMode: false,
   },
   colors: {
     tomato:{

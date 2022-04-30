@@ -22,10 +22,10 @@ export const About = () => {
       justifyContent='space-around'
 
     >
-      <Heading textAlign="center" padding={3}>
+      <Text textAlign="center" padding={3} fontSize={40}>
         About me
-      </Heading>
-      <Stack width={['70%', null, null, '50%', '30%']} alignSelf='center'>
+      </Text>
+      <Stack width={['70%', null, null, '50%', '30%']} alignSelf='center' pt={5}>
         <Text textAlign='center'>{about.en.line1}</Text>
         <Text textAlign='center'>{about.en.line2}</Text>
         <Text textAlign='center'>{about.en.line3}</Text>

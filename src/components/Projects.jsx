@@ -62,7 +62,7 @@ export const Projects = () => {
   const moodColor = useColorModeValue("tomato.500", "tomato.900");
 
   return (
-    <Stack padding={5} id="portfolio">
+    <Stack paddingX={5} pt={20} pb={10} id="portfolio">
       <Text textAlign="center" pb={3} fontSize={40}>
         Some Projects
       </Text>
