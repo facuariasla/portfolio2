@@ -7,6 +7,7 @@ import {
   Grid,
   SimpleGrid,
   Heading,
+  useColorModeValue
 } from "@chakra-ui/react";
 import {
   SiReact,
@@ -78,8 +79,11 @@ const technologies = [
 ];
 
 export const Knowledge = () => {
+  const colorComp = useColorModeValue('tomato.500', 'tomato.900');
+  const colorTech = useColorModeValue('black', 'white');
+
   return (
-    <Stack paddingY={8} borderBottom="1px white solid" >
+    <Stack paddingY={24} >
       <Text textAlign="center" pb={3} fontSize={40}>
         Technologies
       </Text>
@@ -89,8 +93,10 @@ export const Knowledge = () => {
             key={tech.id}
             href={tech.link}
             isExternal
-            color="tomato"
+            color={colorTech}
             textAlign="center"
+            _hover={{textDecoration: 'none', color:colorComp, transition: 'all .8s'
+          }}
           >
             <Icon
               as={tech.icon}

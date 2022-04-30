@@ -1,20 +1,30 @@
 import { extendTheme, theme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 
+
 export const theme1 = extendTheme({
   config: {
-    initialColorMode: "dark",
-    useSystemColorMode: false,
+    initialColorMode: "light",
+    useSystemColorMode: true,
   },
-  color: {
-    primary: theme.colors.cyan,
+  colors: {
+    tomato:{
+      500: '#F76045',
+      900: '#A82E19'
+    }
+  },
+  fonts: {
+    heading: 'Roboto, sans-serif',
+    body: 'Roboto, sans-serif',
   },
   styles: {
-    global: {
+    global: (props) => ({
       "html, body, #root": {
         height: "100%",
+        color: props.colorMode === 'dark' ? 'gray.300' : 'black',
+
       },
-    },
+    }) 
   },
   breakpoints: {
     sm: "320px",

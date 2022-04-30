@@ -11,11 +11,35 @@ import {
   Button,
   Icon,
   Stack,
+  Link,
   useColorModeValue,
   useColorMode,
 } from "@chakra-ui/react";
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 import { BiAlignRight } from "react-icons/bi";
+
+const links = [
+  {
+    id: 1,
+    content: "Home",
+    href: "#home",
+  },
+  {
+    id: 2,
+    content: "About",
+    href: "#about",
+  },
+  {
+    id: 3,
+    content: "Portfolio",
+    href: "#portfolio",
+  },
+  {
+    id: 4,
+    content: "Contact",
+    href: "#contact",
+  },
+];
 
 export const MenuNav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -26,8 +50,8 @@ export const MenuNav = () => {
 
   return (
     <>
-      <Button ref={btnRef} colorScheme="teal" onClick={onOpen}>
-        <Icon as={BiAlignRight} height={6} width={6}></Icon>
+      <Button ref={btnRef} backgroundColor="tomato" onClick={onOpen} w={14}>
+        <Icon as={BiAlignRight} height={8} width={8}></Icon>
       </Button>
       <Drawer
         isOpen={isOpen}
@@ -49,18 +73,21 @@ export const MenuNav = () => {
                 height={8}
                 width={8}
               ></Icon>
-              <Heading fontSize={28} href="#">
-                Home
-              </Heading>
-              <Heading fontSize={28} href="#">
-                About
-              </Heading>
-              <Heading fontSize={28} href="#">
-                Portfolio
-              </Heading>
-              <Heading fontSize={28} href="#">
-                Contact
-              </Heading>
+
+              {links.map((el) => (
+                <Link
+                  key={el.id}
+                  href={el.href}
+                  _hover={{
+                    textDecoration: "none",
+                    color: "gray.500",
+                    transition: "all .4s",
+                  }}
+                >
+                  <Heading fontSize={28}>{el.content}</Heading>
+                </Link>
+              ))}
+
             </Stack>
           </DrawerBody>
         </DrawerContent>

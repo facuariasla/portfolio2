@@ -11,15 +11,40 @@ import {
   Flex,
   Link,
   LinkBox,
-  LinkOverlay
+  LinkOverlay,
 } from "@chakra-ui/react";
 
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
+
+const links = [
+  {
+    id: 1,
+    content: "Home",
+    href: "#home",
+  },
+  {
+    id: 2,
+    content: "About",
+    href: "#about",
+  },
+  {
+    id: 3,
+    content: "Portfolio",
+    href: "#portfolio",
+  },
+  {
+    id: 4,
+    content: "Contact",
+    href: "#contact",
+  },
+];
 
 export const Header = () => {
   const { toggleColorMode } = useColorMode();
   const [isMobile] = useMediaQuery("(max-width: 600px)");
   const iconMode = useColorModeValue(MoonIcon, SunIcon);
+  const colorComp = useColorModeValue('tomato.500', 'tomato.900');
+
 
   return (
     <Stack
@@ -29,9 +54,9 @@ export const Header = () => {
       fontSize={20}
       direction="row"
       justifyContent="space-between"
-      padding={4}
+      padding={2.5}
       paddingRight={10}
-      backgroundColor="tomato"
+      backgroundColor={colorComp}
       zIndex={2}
     >
       {/* <Text fontSize={20}>Nombre</Text> */}
@@ -53,29 +78,21 @@ export const Header = () => {
       ) : (
         <Stack direction="row" alignItems="center" spacing={6}>
           {/* Agregar id con el mismo nombre de href a donde ir */}
-          <Link href="#home">
-            <Heading fontSize={[18, null, null, null, 25]} href="#">
-              Home
-            </Heading>
-          </Link>
-
-          <Link href="#about">
-            <Heading fontSize={[18, null, null, null, 25]} href="#">
-              About
-            </Heading>
-          </Link>
-
-          <Link href="#portfolio">
-            <Heading fontSize={[18, null, null, null, 25]} href="#">
-              Portfolio
-            </Heading>
-          </Link>
-
-          <Link href="#contact">
-            <Heading fontSize={[18, null, null, null, 25]} href="#">
-              Contact
-            </Heading>
-          </Link>
+          {links.map((el) => (
+            <Link
+              key={el.id}
+              href={el.href}
+              _hover={{
+                textDecoration: "none",
+                color: "gray.500",
+                transition: "all .4s",
+              }}
+            >
+              <Heading fontSize={[18, null, null, null, 22]}>
+                {el.content}
+              </Heading>
+            </Link>
+          ))}
 
           <Icon
             as={iconMode}

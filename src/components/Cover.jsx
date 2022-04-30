@@ -37,6 +37,8 @@ const svgStyle = {
 };
 
 export const Cover = () => {
+  const colorComp = useColorModeValue('tomato.500', 'tomato.900');
+
   return (
     <Stack
       height="90vh"
@@ -45,32 +47,31 @@ export const Cover = () => {
       alignItems="center"
       justifyContent="center"
       id='home'
+      backgroundColor={colorComp}
     >
       <Stack
         width={["100%", null, null, "50%"]}
         height={["90vh", null, null, "90vh"]}
         display={["none", "", "", "block"]}
         alignItems="center"
-        backgroundColor="tomato"
       >
         {/* Cambiar TAG al poner IMG u otra cosa */}
         <Heading
           h="100%"
           alignItems="center"
           margin={0}
-          fontSize={{ base: 200, md: 220, lg: 250, xl: 350 }}
+          fontSize={{ base: 300, md: 320, lg: 350, xl: 450 }}
           textAlign="center"
           isTruncated
           display="flex"
           justifyContent="center"
         >
-          IMG
+          F
         </Heading>
       </Stack>
       <Stack
         width={["100%", null, null, "50%"]}
         height={["90vh", null, null, "90vh"]}
-        backgroundColor="tomato"
       >
         <Heading
           h="100%"
