@@ -47,10 +47,11 @@ export const MenuNav = () => {
 
   const { toggleColorMode } = useColorMode();
   const iconMode = useColorModeValue(MoonIcon, SunIcon);
+  const colorComp = useColorModeValue('tomato.500', 'gray.800');
 
   return (
     <>
-      <Button ref={btnRef} backgroundColor="tomato" onClick={onOpen} w={14}>
+      <Button ref={btnRef} backgroundColor={colorComp} onClick={onOpen} w={14}>
         <Icon as={BiAlignRight} height={8} width={8}></Icon>
       </Button>
       <Drawer
