@@ -43,7 +43,9 @@ export const Header = () => {
   const { toggleColorMode } = useColorMode();
   const [isMobile] = useMediaQuery("(max-width: 600px)");
   const iconMode = useColorModeValue(MoonIcon, SunIcon);
-  const colorComp = useColorModeValue('tomato.500', 'tomato.900');
+  const colorComp = useColorModeValue('tomato.500', 'gray.800');
+  const fontColor = useColorModeValue('black', 'tomato');
+  const linesColor = useColorModeValue('white', 'tomato');
 
 
   return (
@@ -58,13 +60,15 @@ export const Header = () => {
       paddingRight={10}
       backgroundColor={colorComp}
       zIndex={2}
+      color={fontColor}
     >
       {/* <Text fontSize={20}>Nombre</Text> */}
       <LinkBox>
         <LinkOverlay href="#home">
           <Heading
             fontSize={22}
-            border="solid 1px white"
+            border="solid 1px"
+            borderColor={linesColor}
             padding={2}
             textAlign="center"
           >

@@ -37,7 +37,8 @@ const svgStyle = {
 };
 
 export const Cover = () => {
-  const colorComp = useColorModeValue('tomato.500', 'tomato.900');
+  const colorComp = useColorModeValue('tomato.500', 'gray.800');
+  const fontColor = useColorModeValue('black', 'tomato');
 
   return (
     <Stack
@@ -48,6 +49,7 @@ export const Cover = () => {
       justifyContent="center"
       id='home'
       backgroundColor={colorComp}
+      color={fontColor}
     >
       <Stack
         width={["100%", null, null, "50%"]}

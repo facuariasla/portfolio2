@@ -19,6 +19,7 @@ import {
   SiExpress,
   SiSass,
   SiChakraui,
+  SiStyledcomponents
 } from "react-icons/si";
 
 const technologies = [
@@ -59,6 +60,12 @@ const technologies = [
     link: "https://chakra-ui.com/",
   },
   {
+    id: 10,
+    name: "Styled-Components",
+    icon: SiStyledcomponents,
+    link: "https://styled-components.com/",
+  },
+  {
     id: 7,
     name: "Sass",
     icon: SiSass,
@@ -76,10 +83,10 @@ const technologies = [
     icon: SiFirebase,
     link: "https://firebase.google.com/",
   },
+
 ];
 
 export const Knowledge = () => {
-  const colorComp = useColorModeValue('tomato.500', 'tomato.900');
   const colorTech = useColorModeValue('black', 'white');
 
   return (
@@ -87,7 +94,7 @@ export const Knowledge = () => {
       <Text textAlign="center" pb={3} fontSize={40}>
         Technologies
       </Text>
-      <SimpleGrid columns={[3, null, null, 4, 5, 9]} gap={6} padding={4}>
+      <SimpleGrid minChildWidth='80px' gap={6} padding={4}>
         {technologies.map((tech) => (
           <Link
             key={tech.id}
@@ -95,7 +102,7 @@ export const Knowledge = () => {
             isExternal
             color={colorTech}
             textAlign="center"
-            _hover={{textDecoration: 'none', color:colorComp, transition: 'all .8s'
+            _hover={{textDecoration: 'none', color: 'tomato.500', transition: 'all .8s'
           }}
           >
             <Icon
