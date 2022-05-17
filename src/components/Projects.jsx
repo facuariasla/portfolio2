@@ -14,7 +14,7 @@ import img2 from "../assets/proyect-screens/RPS-single2.png";
 import img3 from "../assets/proyect-screens/Crypto-info2.png";
 import img4 from "../assets/proyect-screens/YuGiOh2.png";
 import img5 from "../assets/proyect-screens/LandingPage2.png";
-import img0 from "../assets/proyect-screens/Real-estate.png";
+import img0 from "../assets/proyect-screens/realestate.png";
 
 const projects = [
   {
