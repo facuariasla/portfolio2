@@ -77,7 +77,8 @@ export const Projects = () => {
       </Text>
 
       <SimpleGrid
-        columns={[2, 2, 2, 3, 5, 5]}
+        // columns={[2, 2, 2, 3, 5, 5]}
+        minChildWidth='150px'
         gap={5}
         justifyItems="center"
         paddingY={6}
