@@ -15,8 +15,17 @@ import img3 from "../assets/proyect-screens/Crypto-info2.png";
 import img4 from "../assets/proyect-screens/YuGiOh2.png";
 import img5 from "../assets/proyect-screens/LandingPage2.png";
 import img0 from "../assets/proyect-screens/realestate.png";
+import img6 from "../assets/proyect-screens/icon-poke.png";
 
 const projects = [
+  {
+    id: 6,
+    title: "Who's that Pokemon?",
+    img: img6,
+    desc: "Who's that Pokemon!???. Created using React Hooks in Vite project, and some CSS styles. Credits: goncypozzo challengs. Components from https://nostalgic-css.github.io/NES.css/  ",
+    link: "https://pokemon-who.vercel.app/",
+    repo: "https://github.com/facuariasla/pokemon-who",
+  },
   {
     id: 0,
     title: "Real Estate - Properties",
@@ -116,7 +125,7 @@ export const Projects = () => {
                 <Image src={el.img} h="100%"></Image>
               </Link>
               <Stack justifyContent="center" h="40%">
-                <Text fontWeight="bold">{el.title}</Text>
+                <Text fontWeight="bold" px={2}>{el.title}</Text>
                 <Link href={el.repo} fontSize={14} isExternal>
                   Repository
                 </Link>
