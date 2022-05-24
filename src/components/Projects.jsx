@@ -22,7 +22,7 @@ const projects = [
     id: 6,
     title: "Who's that Pokemon?",
     img: img6,
-    desc: "Who's that Pokemon!???. Created using React Hooks in Vite project, and some CSS styles. Credits: goncypozzo challengs. Components from https://nostalgic-css.github.io/NES.css/  ",
+    desc: "Who's that Pokemon!?. Created using React Hooks in Vite project, some CSS styles, and Piskel. Credits: goncypozzo challenges. Components from https://nostalgic-css.github.io/NES.css/  ",
     link: "https://pokemon-who.vercel.app/",
     repo: "https://github.com/facuariasla/pokemon-who",
   },
