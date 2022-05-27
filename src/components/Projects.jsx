@@ -8,7 +8,7 @@ import {
   useColorModeValue,
   Tooltip,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import img1 from "../assets/proyect-screens/RPS-pvp2.png";
 import img2 from "../assets/proyect-screens/RPS-single2.png";
 import img3 from "../assets/proyect-screens/Crypto-info2.png";
@@ -16,6 +16,9 @@ import img4 from "../assets/proyect-screens/YuGiOh2.png";
 import img5 from "../assets/proyect-screens/LandingPage2.png";
 import img0 from "../assets/proyect-screens/realestate.png";
 import img6 from "../assets/proyect-screens/icon-poke.png";
+
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const projects = [
   {
@@ -79,8 +82,12 @@ const projects = [
 export const Projects = () => {
   const moodColor = useColorModeValue("tomato.500", "tomato.900");
 
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, [])
+
   return (
-    <Stack paddingX={5} pt={20} pb={10} id="portfolio">
+    <Stack paddingX={5} pt={20} pb={10} id="portfolio" data-aos='fade-up'>
       <Text textAlign="center" pb={3} fontSize={40}>
         Some Projects
       </Text>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Stack,
   Link,
@@ -21,6 +21,7 @@ import {
   SiChakraui,
   SiStyledcomponents
 } from "react-icons/si";
+
 
 const technologies = [
   {
@@ -86,12 +87,15 @@ const technologies = [
 
 ];
 
+
 export const Knowledge = () => {
   const colorTech = useColorModeValue('black', 'white');
 
+
   return (
-    <Stack paddingTop={24} >
-      <Text textAlign="center" pb={3} fontSize={40}>
+    <Stack paddingTop={24}>
+      <Text textAlign="center" pb={3} fontSize={40} 
+>
         Technologies
       </Text>
       <SimpleGrid minChildWidth='80px' gap={6} padding={4}>

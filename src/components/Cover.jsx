@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Stack,
   Heading,
@@ -6,6 +6,9 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import Aos from 'aos';
+import "aos/dist/aos.css";
+
 
 const svgStyle = {
   before: {
@@ -40,9 +43,14 @@ export const Cover = () => {
   const colorComp = useColorModeValue('tomato.500', 'gray.800');
   const fontColor = useColorModeValue('black', 'tomato');
 
+  useEffect(() => {
+    Aos.init({ duration: 2500 });
+  }, [])
+  
+
   return (
     <Stack
-      height="90vh"
+      height="100vh"
       direction={["column", null, null, "row"]}
       width="100%"
       alignItems="center"
@@ -67,6 +75,8 @@ export const Cover = () => {
           isTruncated
           display="flex"
           justifyContent="center"
+          data-aos='fade-right'
+        
         >
           F
         </Heading>
@@ -84,6 +94,7 @@ export const Cover = () => {
           isTruncated
           display="flex"
           justifyContent="center"
+          data-aos='fade-left'
         >
           .A
         </Heading>

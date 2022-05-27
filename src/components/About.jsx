@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Heading, Stack, Text } from "@chakra-ui/react";
+
 
 const about = {
   en:{
@@ -12,8 +13,10 @@ const about = {
 }
 
 
-
 export const About = () => {
+
+  
+  
   return (
     <Stack
       direction={["column", "column", "column", "row", "row"]}
@@ -21,7 +24,6 @@ export const About = () => {
       pt={12}
       id="about"
       justifyContent='space-around'
-
     >
       <Text textAlign="center" padding={3} fontSize={40}>
         About me
