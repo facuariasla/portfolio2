@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { MenuNav } from "../subcomponents/Menu";
 import {
   Stack,
@@ -15,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
+
 
 const links = [
   {
@@ -78,7 +79,7 @@ export const Header = () => {
       </LinkBox>
       {/* Only in < 480px */}
       {isMobile ? (
-        <MenuNav />
+        <MenuNav data-aos='fade-left'/>
       ) : (
         <Stack direction="row" alignItems="center" spacing={6}>
           {/* Agregar id con el mismo nombre de href a donde ir */}
