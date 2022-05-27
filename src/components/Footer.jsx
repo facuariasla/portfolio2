@@ -4,7 +4,7 @@ import { SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";
 
 export const Footer = () => {
   return (
-    <Stack width="100%" paddingTop={20} paddingBottom={4} fontSize={20}>
+    <Stack width="100%" paddingTop={12} paddingBottom={4} fontSize={20}>
       <Stack justifyContent="center" alignItems="center" direction="column">
         <Stack
           direction="row"

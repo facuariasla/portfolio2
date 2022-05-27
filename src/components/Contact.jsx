@@ -85,7 +85,7 @@ export const Contact = () => {
   const isError2 = email.message === "";
   return (
     <Stack padding={6} id="contact">
-      <Text textAlign="center" pb={3} fontSize={40}>
+      <Text textAlign="center" pb={3} pt={8} fontSize={40}>
         Contact
       </Text>
 
@@ -95,7 +95,7 @@ export const Contact = () => {
         w={["100%", null, null, "50%"]}
         alignSelf="center"
       >
-        <FormLabel htmlFor="email">From</FormLabel>
+        <FormLabel m={0} htmlFor="email">From</FormLabel>
         <Input
           id="email"
           type="text"
@@ -106,7 +106,7 @@ export const Contact = () => {
           onChange={handleChange}
         />
 
-        <FormLabel htmlFor="message">Message</FormLabel>
+        <FormLabel pt={4} m={0} htmlFor="message">Message</FormLabel>
         <Textarea
           id="message"
           backgroundColor={formsColor}
@@ -115,7 +115,8 @@ export const Contact = () => {
           name="message"
           value={email.message}
           onChange={handleChange}
-        />
+          h='130px'
+          />
 
         <Button
           type="submit"
@@ -130,7 +131,10 @@ export const Contact = () => {
         </Button>
       </FormControl>
       <Text textAlign="center" color="gray.500">
-        Or send me an email to <strong>facundolautaroarias@hotmail.com</strong>
+        Or send me an email to:
+      </Text>
+      <Text textAlign="center" color="gray.500">
+        <strong>facundolautaroarias@hotmail.com</strong>
       </Text>
     </Stack>
   );

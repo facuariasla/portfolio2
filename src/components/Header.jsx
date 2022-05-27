@@ -57,7 +57,7 @@ export const Header = () => {
       direction="row"
       justifyContent="space-between"
       padding={2.5}
-      paddingRight={10}
+      paddingRight='4%'
       backgroundColor={colorComp}
       zIndex={2}
       color={fontColor}
