@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Heading, Stack, Text } from "@chakra-ui/react";
-
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const about = {
   en:{
@@ -15,6 +16,9 @@ const about = {
 
 export const About = () => {
 
+  useEffect(() => {
+    Aos.init({ duration: 2500 });
+  }, [])
   
   
   return (
@@ -24,6 +28,7 @@ export const About = () => {
       pt={12}
       id="about"
       justifyContent='space-around'
+      data-aos='fade-up'
     >
       <Text textAlign="center" padding={3} fontSize={40}>
         About me

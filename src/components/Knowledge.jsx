@@ -21,7 +21,8 @@ import {
   SiChakraui,
   SiStyledcomponents
 } from "react-icons/si";
-
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const technologies = [
   {
@@ -91,9 +92,13 @@ const technologies = [
 export const Knowledge = () => {
   const colorTech = useColorModeValue('black', 'white');
 
+  useEffect(() => {
+    Aos.init({ duration: 2500 });
+  }, [])
+  
 
   return (
-    <Stack paddingTop={24}>
+    <Stack paddingTop={24} data-aos='fade-up'>
       <Text textAlign="center" pb={3} fontSize={40} 
 >
         Technologies
