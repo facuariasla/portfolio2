@@ -21,14 +21,7 @@ import Aos from 'aos';
 import "aos/dist/aos.css";
 
 const projects = [
-  {
-    id: 6,
-    title: "Who's that Pokemon?",
-    img: img6,
-    desc: "Who's that Pokemon!?. Created using React Hooks in Vite project, some CSS styles, and Piskel. Credits: goncypozzo challenges. Components from https://nostalgic-css.github.io/NES.css/  ",
-    link: "https://pokemon-who.vercel.app/",
-    repo: "https://github.com/facuariasla/pokemon-who",
-  },
+
   {
     id: 0,
     title: "Real Estate - Properties",
@@ -36,6 +29,15 @@ const projects = [
     desc: "WebApp that shows properties to rent & buy; you can apply a couple of filters. Created using NextJS, React Hooks, & ChakraUI",
     link: "https://realestate-properties.vercel.app/",
     repo: "https://github.com/facuariasla/realestate-properties",
+  },
+
+  {
+    id: 3,
+    title: "Crypto-info",
+    img: img3,
+    desc: "Application where you can see the flow of different cryptocurrencies over time, in a graph. Created using ReactHooks, CoinGeko API, axios, and react-chartjs-2",
+    link: "https://cryptodata001.netlify.app",
+    repo: "https://github.com/facuariasla/crypto-info",
   },
   {
     id: 1,
@@ -54,12 +56,12 @@ const projects = [
     repo: "https://github.com/facuariasla/8des-m5",
   },
   {
-    id: 3,
-    title: "Crypto-info",
-    img: img3,
-    desc: "Application where you can see the flow of different cryptocurrencies over time, in a graph. Created using ReactHooks, CoinGeko API, axios, and react-chartjs-2",
-    link: "https://cryptodata001.netlify.app",
-    repo: "https://github.com/facuariasla/crypto-info",
+    id: 6,
+    title: "Who's that Pokemon?",
+    img: img6,
+    desc: "Who's that Pokemon!?. Created using React Hooks in Vite project, some CSS styles, and Piskel. Credits: goncypozzo challenges. Components from https://nostalgic-css.github.io/NES.css/  ",
+    link: "https://pokemon-who.vercel.app/",
+    repo: "https://github.com/facuariasla/pokemon-who",
   },
   {
     id: 4,
