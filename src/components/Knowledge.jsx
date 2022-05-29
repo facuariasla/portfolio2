@@ -111,7 +111,8 @@ export const Knowledge = () => {
             isExternal
             color={colorTech}
             textAlign="center"
-            _hover={{textDecoration: 'none', color: 'tomato.500', transition: 'all .8s'
+            transition='all 0.5s'
+            _hover={{textDecoration: 'none', color: 'tomato.500'
           }}
           >
             <Icon

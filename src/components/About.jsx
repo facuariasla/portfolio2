@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 const about = {
   en:{
     // line1: "Hey there! im Facundo Arias",
-    line1: 'Hey there! im Facundo Arias. Passionate about web development, frontend development and introducing me to the backend, web3 enthusiast. I have carried out some personal projects, involving both the frontend, and the creation of APIs on the backend side, you can see in the projects section',
+    line1: 'Hey there! im Facundo Arias. Passionate about web development, frontend development with React, and introducing me to the backend using NodeJS. Web3 enthusiast. I have carried out some personal projects, involving both the frontend, and the creation of APIs on the backend side, you can see in the projects section',
     line2: "Frontend developer",
     line3: "Backend enthusiast",
     line4: "Analogic photography 🤠"
@@ -24,8 +24,8 @@ export const About = () => {
   return (
     <Stack
       direction={["column", "column", "column", "row", "row"]}
-      padding={6}
       pt={12}
+      px={[null,null,null, 12]}
       id="about"
       justifyContent='space-around'
       data-aos='fade-up'
@@ -33,7 +33,7 @@ export const About = () => {
       <Text textAlign="center" padding={3} fontSize={40}>
         About me
       </Text>
-      <Stack width={['70%', null, null, '50%', '30%']} alignSelf='center' pt={5}>
+      <Stack width={['70%', null, null, '60%', '40%']} alignSelf='center' pt={5}>
         <Text textAlign='center'>{about.en.line1}</Text>
 
       </Stack>

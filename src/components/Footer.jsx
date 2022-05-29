@@ -15,10 +15,10 @@ export const Footer = () => {
           <Link
             href="https://github.com/facuariasla"
             isExternal
+            transition= "all 0.5s"
             _hover={{
               textDecoration: "none",
               color: "tomato",
-              transition: "all .4s",
             }}
           >
             <Icon as={SiGithub}></Icon>
@@ -26,10 +26,11 @@ export const Footer = () => {
           <Link
             href="https://www.linkedin.com/in/facuariasla/"
             isExternal
+            transition= "all 0.5s"
             _hover={{
               textDecoration: "none",
               color: "tomato",
-              transition: "all .4s",
+              
             }}
           >
             <Icon as={SiLinkedin}></Icon>
@@ -37,10 +38,11 @@ export const Footer = () => {
           <Link
             href="https://www.instagram.com/facuariasla/"
             isExternal
+            transition= "all 0.5s"
+
             _hover={{
               textDecoration: "none",
               color: "tomato",
-              transition: "all .4s",
             }}
           >
             <Icon as={SiInstagram}></Icon>

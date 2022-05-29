@@ -65,13 +65,15 @@ export const Header = () => {
     >
       {/* <Text fontSize={20}>Nombre</Text> */}
       <LinkBox>
-        <LinkOverlay href="#home">
+        <LinkOverlay href="#home" >
           <Heading
             fontSize={22}
             border="solid 1px"
             borderColor={linesColor}
             padding={2}
             textAlign="center"
+            transition= "all 0.5s"
+
           >
             Arias Facundo
           </Heading>
@@ -87,10 +89,10 @@ export const Header = () => {
             <Link
               key={el.id}
               href={el.href}
+              transition= "all 0.5s"
               _hover={{
                 textDecoration: "none",
-                color: "gray.500",
-                transition: "all .4s",
+                color: "gray.100",
               }}
             >
               <Heading fontSize={[18, null, null, null, 22]}>
@@ -104,6 +106,11 @@ export const Header = () => {
             onClick={toggleColorMode}
             cursor="pointer"
             fontSize={[20, 25, 20, 25, 30]}
+            transition= "all 0.5s"
+            _hover={{
+              textDecoration: "none",
+              color: "gray.100",
+            }}
           ></Icon>
         </Stack>
       )}
