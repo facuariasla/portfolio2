@@ -19,11 +19,15 @@ import {
   SiExpress,
   SiSass,
   SiChakraui,
-  SiStyledcomponents
+  SiStyledcomponents,
+  SiNodedotjs,
+  SiPostgresql,
+  SiSequelize
 } from "react-icons/si";
 import Aos from 'aos';
 import "aos/dist/aos.css";
 
+// 13
 const technologies = [
   {
     id: 1,
@@ -85,6 +89,24 @@ const technologies = [
     icon: SiFirebase,
     link: "https://firebase.google.com/",
   },
+  {
+    id: 11,
+    name: "NodeJS",
+    icon: SiNodedotjs,
+    link: "https://nodejs.org/en/",
+  },
+  {
+    id: 12,
+    name: "PostgreSQL",
+    icon: SiPostgresql,
+    link: "https://www.postgresql.org/",
+  },
+  {
+    id: 13,
+    name: "Sequelize",
+    icon: SiSequelize,
+    link: "https://sequelize.org/",
+  },
 
 ];
 
@@ -103,7 +125,10 @@ export const Knowledge = () => {
 >
         Technologies
       </Text>
-      <SimpleGrid minChildWidth='80px' gap={6} padding={4}>
+      <Grid ></Grid>
+
+      {/* minChildWidth='90px'  */}
+      <SimpleGrid columns={[2,3,3,4]}  gap={6} padding={4}>
         {technologies.map((tech) => (
           <Link
             key={tech.id}

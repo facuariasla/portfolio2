@@ -6,10 +6,11 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Cover } from "./components/Cover";
 import './App.css'
+import { Stack } from "@chakra-ui/react";
 
 function App() {
   return (
-    <>
+    <Stack>
       <Header />
 
       <Cover />
@@ -19,7 +20,7 @@ function App() {
       <Contact />
 
       <Footer />
-    </>
+    </Stack>
   );
 }
 

@@ -6,13 +6,10 @@ import "aos/dist/aos.css";
 const about = {
   en:{
     // line1: "Hey there! im Facundo Arias",
-    line1: 'Hey there! im Facundo Arias. Passionate about web development, frontend development with React, and introducing me to the backend using NodeJS. Web3 enthusiast. I have carried out some personal projects, involving both the frontend, and the creation of APIs on the backend side, you can see in the projects section',
-    line2: "Frontend developer",
-    line3: "Backend enthusiast",
-    line4: "Analogic photography 🤠"
+    line1: "Hey there! I'm Facundo Arias from Argentina, a passionate self-taught Frontend developer with ReactJS. Pseudo Fullstack developer, with some knowledge in the Backend using NodeJS. Web3 enthusiast. Continually learning",
+    line2: "I've carried out some personal projects, involving both the Frontend and the creation of APIs on the Backend side, which you can see in the projects section",
   }
 }
-
 
 export const About = () => {
 
@@ -35,7 +32,7 @@ export const About = () => {
       </Text>
       <Stack width={['70%', null, null, '60%', '40%']} alignSelf='center' pt={5}>
         <Text textAlign='center'>{about.en.line1}</Text>
-
+        <Text textAlign='center'>{about.en.line2}</Text>
       </Stack>
 
       {/* <Stack>
