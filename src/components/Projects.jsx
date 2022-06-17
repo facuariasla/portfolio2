@@ -16,12 +16,20 @@ import img4 from "../assets/proyect-screens/YuGiOh2.png";
 import img5 from "../assets/proyect-screens/LandingPage2.png";
 import img0 from "../assets/proyect-screens/realestate.png";
 import img6 from "../assets/proyect-screens/icon-poke.png";
+import img7 from "../assets/proyect-screens/pet-lost.png";
 
 import Aos from 'aos';
 import "aos/dist/aos.css";
 
 const projects = [
-
+  {
+    id: 7,
+    title: "Perros Perdidos",
+    img: img7,
+    desc: "IN DEVELOPMENT. WebApp that helps people find their dogs, using location with Mapbox, the people can see the lost pets around them. Technologies: ReactJS, ChakraUI and MapBox, backend with PostgreSQL & Sequelize in development",
+    link: "https://lost-pets.vercel.app/",
+    repo: "https://github.com/facuariasla/pets-react",
+  },
   {
     id: 0,
     title: "Real Estate - Properties",
@@ -79,6 +87,7 @@ const projects = [
     link: "https://62543e5b0e435b7f891a0ce1--stellar-profiterole-99e7c9.netlify.app",
     repo: "https://github.com/facuariasla/landing-page-react",
   },
+
 ];
 
 export const Projects = () => {
