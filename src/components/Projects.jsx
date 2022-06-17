@@ -26,7 +26,7 @@ const projects = [
     id: 7,
     title: "Perros Perdidos",
     img: img7,
-    desc: "IN DEVELOPMENT. WebApp that helps people find their dogs, using location with Mapbox, the people can see the lost pets around them. Technologies: ReactJS, ChakraUI and MapBox, backend with PostgreSQL & Sequelize in development",
+    desc: "IN DEVELOPMENT. WebApp that helps people find their pets, using location with Mapbox, another people 'can see' the lost pets around them, and report them with the owner. Technologies: ReactJS, ChakraUI and MapBox, backend with PostgreSQL & Sequelize in development",
     link: "https://lost-pets.vercel.app/",
     repo: "https://github.com/facuariasla/pets-react",
   },
