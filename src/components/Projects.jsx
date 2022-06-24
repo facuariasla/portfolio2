@@ -16,7 +16,7 @@ import img4 from "../assets/proyect-screens/YuGiOh2.png";
 import img5 from "../assets/proyect-screens/LandingPage2.png";
 import img0 from "../assets/proyect-screens/realestate.png";
 import img6 from "../assets/proyect-screens/icon-poke.png";
-import img7 from "../assets/proyect-screens/pet-lost.png";
+import img7 from "../assets/proyect-screens/lost-pets.png";
 
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -26,9 +26,9 @@ const projects = [
     id: 7,
     title: "Perros Perdidos",
     img: img7,
-    desc: "IN DEVELOPMENT. WebApp that helps people find their pets, using location with Mapbox, another people 'can see' the lost pets around them, and report them with the owner. Technologies: ReactJS, ChakraUI and MapBox, backend with PostgreSQL & Sequelize in development",
-    link: "https://lost-pets.vercel.app/",
-    repo: "https://github.com/facuariasla/pets-react",
+    desc: "WebApp that helps people find their pets, using location with Mapbox, another people 'can see' the lost pets around them, and report them with the owner. Technologies: ReactJS, ChakraUI and MapBox, backend with PostgreSQL & Sequelize. (Fixing some bugs). ",
+    link: "https://mascotasperdidas-iota.vercel.app/",
+    repo: "https://github.com/facuariasla/lost-pets-vite",
   },
   {
     id: 0,
