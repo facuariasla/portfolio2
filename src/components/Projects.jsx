@@ -24,7 +24,7 @@ import "aos/dist/aos.css";
 const projects = [
   {
     id: 7,
-    title: "Perros Perdidos",
+    title: "Mascotas Perdidas",
     img: img7,
     desc: "WebApp that helps people find their pets, using location with Mapbox, another people 'can see' the lost pets around them, and report them with the owner. Technologies: ReactJS, ChakraUI and MapBox, backend with PostgreSQL & Sequelize. (Fixing some bugs). ",
     link: "https://mascotasperdidas-iota.vercel.app/",
@@ -98,7 +98,7 @@ export const Projects = () => {
   }, [])
 
   return (
-    <Stack paddingX={5} pt={20} pb={10} id="portfolio" data-aos='fade-up'>
+    <Stack paddingX={10} pt={20} pb={10} id="portfolio" data-aos='fade-up'>
       <Text textAlign="center" pb={3} fontSize={40}>
         Some Projects
       </Text>
@@ -109,6 +109,7 @@ export const Projects = () => {
         gap={5}
         justifyItems="center"
         paddingY={6}
+        paddingX={4}
       >
         {projects.map((el) => (
           <Tooltip
