@@ -26,7 +26,7 @@ const projects = [
     id: 7,
     title: "Mascotas Perdidas",
     img: img7,
-    desc: "WebApp that helps people find their pets, using location with Mapbox, another people 'can see' the lost pets around them, and report them with the owner. Technologies: ReactJS, ChakraUI and MapBox, backend with PostgreSQL & Sequelize. (Fixing some bugs). ",
+    desc: "WebApp that helps people find their pets, using location with Mapbox. People can see the lost pets around them, and report them with the owner. Technologies: TypeScript, ReactJS & ChakraUI. MapBox and SendGrid. Backend with PostgreSQL - Sequelize and Algolia. ",
     link: "https://mascotasperdidas-iota.vercel.app/",
     repo: "https://github.com/facuariasla/lost-pets-vite",
   },
