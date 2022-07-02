@@ -7,7 +7,7 @@ const about = {
   en:{
     // line1: "Hey there! im Facundo Arias",
     line1: "Hey there! I'm Facundo Arias from Argentina, a passionate self-taught Frontend developer with ReactJS. Pseudo Fullstack developer, with some knowledge in the Backend using NodeJS. Web3 enthusiast. Continually learning",
-    line2: "I've carried out some personal projects, involving both the Frontend and the creation of APIs on the Backend side, which you can see in the projects section",
+    line2: "I've carried out some personal projects, involving the Frontend and the Backend, which you can see in the projects section",
   }
 }
 
