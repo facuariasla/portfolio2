@@ -17,7 +17,8 @@ import img5 from "../assets/proyect-screens/LandingPage2.png";
 import img0 from "../assets/proyect-screens/realestate.png";
 import img6 from "../assets/proyect-screens/icon-poke.png";
 import img7 from "../assets/proyect-screens/lost-pets.png";
-
+import img8 from "../assets/proyect-screens/movie-finder.png";
+import img9 from '../assets/proyect-screens/pooltogether.png'
 import Aos from 'aos';
 import "aos/dist/aos.css";
 
@@ -29,6 +30,22 @@ const projects = [
     desc: "WebApp that helps people find their pets, using location with Mapbox. People can see the lost pets around them, and report them with the owner. Technologies: TypeScript, ReactJS & ChakraUI. MapBox and SendGrid. Backend with PostgreSQL - Sequelize and Algolia. ",
     link: "https://mascotasperdidas-iota.vercel.app/",
     repo: "https://github.com/facuariasla/lost-pets-vite",
+  },
+  {
+    id: 8,
+    title: "Movie Finder",
+    img: img8,
+    desc: "You can search movies in the searcher, and see the details of each movies. Searching by filters as year of release or/and series, episode, movie. Created with React Hooks, TypeScript, Styled-Components & AntDesign. API: omdbapi.com",
+    link: "https://moviefinder-ch.vercel.app/",
+    repo: "https://github.com/facuariasla/moviefinder-ch",
+  },
+  {
+    id: 9,
+    title: "Crypto Prices - Pooltoogether",
+    img: img9,
+    desc: "Pooltogether challenge. You can 'add' fake money to your account filling a form, and then buy crypto currencies. React Hooks, state management with Zustand, react-hook-form, styled with ChakraUI. ",
+    link: "https://2-pooltogether-challenge-gmnpz69lu-facuariasla.vercel.app/",
+    repo: "https://github.com/facuariasla/2-pooltogether-challenge",
   },
   {
     id: 0,
@@ -141,7 +158,7 @@ export const Projects = () => {
                 display="flex"
                 justifyContent="center"
               >
-                <Image src={el.img} h="100%"></Image>
+                <Image src={el.img} backgroundSize='cover' borderTopRadius={8}/>
               </Link>
               <Stack justifyContent="center" h="40%">
                 <Text fontWeight="bold" px={2}>{el.title}</Text>
