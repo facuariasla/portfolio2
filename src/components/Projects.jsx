@@ -44,7 +44,7 @@ const projects = [
     title: "Crypto Prices - Pooltoogether",
     img: img9,
     desc: "Pooltogether challenge. You can 'add' fake money to your account filling a form, and then buy crypto currencies. React Hooks, state management with Zustand, react-hook-form, styled with ChakraUI. ",
-    link: "https://2-pooltogether-challenge-gmnpz69lu-facuariasla.vercel.app/",
+    link: "https://2-pooltogether-challenge.vercel.app/#/",
     repo: "https://github.com/facuariasla/2-pooltogether-challenge",
   },
   {
