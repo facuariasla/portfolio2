@@ -35,7 +35,7 @@ const projects = [
     id: 8,
     title: "Movie Finder",
     img: img8,
-    desc: "You can search movies in the searcher, and see the details of each movies. Searching by filters as year of release or/and series, episode, movie. Created with React Hooks, TypeScript, Styled-Components & AntDesign. API: omdbapi.com",
+    desc: "You can search movies, and see the details of each movie. Searching by filters as a year of release or/and series, episode, movie. Created with React Hooks, TypeScript, Styled-Components & AntDesign. API: omdbapi.com",
     link: "https://moviefinder-ch.vercel.app/",
     repo: "https://github.com/facuariasla/moviefinder-ch",
   },
