@@ -98,22 +98,22 @@ const projects = [
     link: "https://pokemon-who.vercel.app/",
     repo: "https://github.com/facuariasla/pokemon-who",
   },
-  {
-    id: 4,
-    title: "YuGiOh Cards",
-    img: img4,
-    desc: "You can get random YuGiOh cards (Ygoprodeck API). In development...",
-    link: "https://yugiohcards00.netlify.app ",
-    repo: "https://github.com/facuariasla/yugioh-cards-cra",
-  },
-  {
-    id: 5,
-    title: "Landing Page",
-    img: img5,
-    desc: "Basic Landing Page using ReactJS (Create React App), and CSS Flexbox",
-    link: "https://62543e5b0e435b7f891a0ce1--stellar-profiterole-99e7c9.netlify.app",
-    repo: "https://github.com/facuariasla/landing-page-react",
-  },
+  // {
+  //   id: 4,
+  //   title: "YuGiOh Cards",
+  //   img: img4,
+  //   desc: "You can get random YuGiOh cards (Ygoprodeck API). In development...",
+  //   link: "https://yugiohcards00.netlify.app ",
+  //   repo: "https://github.com/facuariasla/yugioh-cards-cra",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Landing Page",
+  //   img: img5,
+  //   desc: "Basic Landing Page using ReactJS (Create React App), and CSS Flexbox",
+  //   link: "https://62543e5b0e435b7f891a0ce1--stellar-profiterole-99e7c9.netlify.app",
+  //   repo: "https://github.com/facuariasla/landing-page-react",
+  // },
 
 ];
 
