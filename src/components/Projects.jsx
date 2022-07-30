@@ -18,7 +18,9 @@ import img0 from "../assets/proyect-screens/realestate.png";
 import img6 from "../assets/proyect-screens/icon-poke.png";
 import img7 from "../assets/proyect-screens/lost-pets.png";
 import img8 from "../assets/proyect-screens/movie-finder.png";
-import img9 from '../assets/proyect-screens/pooltogether.png'
+import img9 from '../assets/proyect-screens/pooltogether.png';
+import img10 from '../assets/proyect-screens/basement.png'
+
 import Aos from 'aos';
 import "aos/dist/aos.css";
 
@@ -28,8 +30,16 @@ const projects = [
     title: "Mascotas Perdidas",
     img: img7,
     desc: "WebApp that helps people find their pets, using location with Mapbox. People can see the lost pets around them, and report them with the owner. Technologies: TypeScript, ReactJS & ChakraUI. MapBox and SendGrid. Backend with PostgreSQL - Sequelize and Algolia. ",
-    link: "https://mascotasperdidas-iota.vercel.app/",
-    repo: "https://github.com/facuariasla/lost-pets-vite",
+    link: "https://basement-ch.vercel.app/",
+    repo: "https://github.com/facuariasla/basement-ch-two",
+  },
+  {
+    id: 10,
+    title: "Basement Challenge",
+    img: img10,
+    desc: "Frontend challenge from basement.studio. State management with Zustand in NextJS, styled with Sass and Framer-motion",
+    link: "https://basement-ch.vercel.app/",
+    repo: "https://github.com/facuariasla/moviefinder-ch",
   },
   {
     id: 8,
