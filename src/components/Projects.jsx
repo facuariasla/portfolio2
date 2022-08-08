@@ -30,8 +30,8 @@ const projects = [
     title: "Mascotas Perdidas",
     img: img7,
     desc: "WebApp that helps people find their pets, using location with Mapbox. People can see the lost pets around them, and report them with the owner. Technologies: TypeScript, ReactJS & ChakraUI. MapBox and SendGrid. Backend with PostgreSQL - Sequelize and Algolia. ",
-    link: "https://basement-ch.vercel.app/",
-    repo: "https://github.com/facuariasla/basement-ch-two",
+    link: "https://mascotasperdidas-iota.vercel.app/",
+    repo: "https://github.com/facuariasla/lost-pets-vite",
   },
   {
     id: 10,
@@ -39,7 +39,7 @@ const projects = [
     img: img10,
     desc: "Frontend challenge from basement.studio. State management with Zustand in NextJS, styled with Sass and Framer-motion",
     link: "https://basement-ch.vercel.app/",
-    repo: "https://github.com/facuariasla/moviefinder-ch",
+    repo: "https://github.com/facuariasla/basement-ch-two",
   },
   {
     id: 8,

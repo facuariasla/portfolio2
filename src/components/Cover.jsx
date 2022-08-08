@@ -2,13 +2,10 @@ import React, { useEffect } from "react";
 import {
   Stack,
   Heading,
-  Image,
-  Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import Aos from 'aos';
+import Aos from "aos";
 import "aos/dist/aos.css";
-
 
 const svgStyle = {
   before: {
@@ -40,13 +37,12 @@ const svgStyle = {
 };
 
 export const Cover = () => {
-  const colorComp = useColorModeValue('tomato.500', 'gray.800');
-  const fontColor = useColorModeValue('black', 'tomato');
+  const colorComp = useColorModeValue("tomato.500", "gray.800");
+  const fontColor = useColorModeValue("black", "tomato");
 
   useEffect(() => {
     Aos.init({ duration: 2500 });
-  }, [])
-  
+  }, []);
 
   return (
     <Stack
@@ -55,7 +51,7 @@ export const Cover = () => {
       width="100%"
       alignItems="center"
       justifyContent="center"
-      id='home'
+      id="home"
       backgroundColor={colorComp}
       color={fontColor}
     >
@@ -75,8 +71,7 @@ export const Cover = () => {
           isTruncated
           display="flex"
           justifyContent="center"
-          data-aos='fade-right'
-        
+          data-aos="fade-right"
         >
           F
         </Heading>
@@ -94,7 +89,7 @@ export const Cover = () => {
           isTruncated
           display="flex"
           justifyContent="center"
-          data-aos='fade-left'
+          data-aos="fade-left"
         >
           .A
         </Heading>
