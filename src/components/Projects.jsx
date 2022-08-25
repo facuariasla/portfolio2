@@ -20,6 +20,8 @@ import img7 from "../assets/proyect-screens/lost-pets.png";
 import img8 from "../assets/proyect-screens/movie-finder.png";
 import img9 from '../assets/proyect-screens/pooltogether.png';
 import img10 from '../assets/proyect-screens/basement.png'
+import img11 from '../assets/proyect-screens/logopepes.png'
+import img12 from '../assets/proyect-screens/pikachu.png'
 
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -40,6 +42,22 @@ const projects = [
     desc: "Frontend challenge from basement.studio. State management with Zustand in NextJS, styled with Sass and Framer-motion",
     link: "https://basement-ch.vercel.app/",
     repo: "https://github.com/facuariasla/basement-ch-two",
+  },
+  {
+    id: 11,
+    title: "Almacén Pepe",
+    img: img11,
+    desc: "Simple store that sell a couple of products. You can buy products by communicating with the store seller via WhatsApp. The products come from a Google Sheets file that the seller can update whenever they want.",
+    link: "https://pepealmacen.vercel.app/",
+    repo: "https://github.com/facuariasla/almacen-next-chakra",
+  },
+  {
+    id: 12,
+    title: "Poke-buscador",
+    img: img12,
+    desc: "Pokemon searcher. You can search any pokemon (1152), filter by type (if you want), and see the details of each one. [React Hooks, Tailwind, React Router Dom, and PokeAPI].",
+    link: "https://pokepoke-ten.vercel.app/",
+    repo: "https://github.com/facuariasla/poke-tailwind",
   },
   {
     id: 8,
