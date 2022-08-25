@@ -22,7 +22,8 @@ import {
   SiStyledcomponents,
   SiNodedotjs,
   SiPostgresql,
-  SiSequelize
+  SiSequelize,
+  SiTailwindcss
 } from "react-icons/si";
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -58,6 +59,12 @@ const technologies = [
     name: "CSS3",
     icon: SiCss3,
     link: "https://www.w3.org/TR/CSS/#css",
+  },
+  {
+    id: 14,
+    name: "Tailwind",
+    icon: SiTailwindcss,
+    link: "https://tailwindcss.com/",
   },
   {
     id: 6,
