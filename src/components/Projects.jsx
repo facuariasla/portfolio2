@@ -4,7 +4,6 @@ import {
   Text,
   Image,
   Link,
-  Heading,
   useColorModeValue,
   Tooltip,
 } from "@chakra-ui/react";
@@ -21,7 +20,8 @@ import img8 from "../assets/proyect-screens/movie-finder.png";
 import img9 from '../assets/proyect-screens/pooltogether.png';
 import img10 from '../assets/proyect-screens/basement.png'
 import img11 from '../assets/proyect-screens/logopepes.png'
-import img12 from '../assets/proyect-screens/pikachu.png'
+// import img12 from '../assets/proyect-screens/pikachu.png'
+import img12 from '../assets/proyect-screens/poke1.png'
 
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -186,7 +186,7 @@ export const Projects = () => {
                 display="flex"
                 justifyContent="center"
               >
-                <Image src={el.img} backgroundSize='cover' borderTopRadius={8}/>
+                <Image src={el.img} objectFit='cover' borderTopRadius={8}/>
               </Link>
               <Stack justifyContent="center" h="40%">
                 <Text fontWeight="bold" px={2}>{el.title}</Text>
